@@ -1,0 +1,48 @@
+{
+  "name": "blog_react",
+  "version": "1.0.0",
+  "description": "A blog demo established using React.js",
+  "main": "build/index.html",
+  "scripts": {
+    "dev": "gulp dev",
+    "deploy": "gh-pages -d build/blog_react",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yakima-Teng/blog_react.git"
+  },
+  "keywords": [
+    "react",
+    "blog"
+  ],
+  "author": "cleveryun@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yakima-Teng/blog_react/issues"
+  },
+  "homepage": "https://github.com/Yakima-Teng/blog_react#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
+    "del": "^2.2.2",
+    "gh-pages": "^0.12.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-connect": "^5.0.0",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sequence": "^0.4.6",
+    "gulp-uglify": "^2.0.0",
+    "http-proxy-middleware": "^0.17.2",
+    "less-plugin-autoprefix": "^1.5.1",
+    "opn": "^4.0.2",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8"
+  }
+}

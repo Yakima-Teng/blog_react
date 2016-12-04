@@ -68,7 +68,7 @@ var Header = React.createClass({
                 </nav>
                 <section className="header_gama">
                     <form>
-                        <input type="text" id="bdcsMain" name="word" placeholder="Search..." autocomplete="on" />
+                        <input type="text" id="bdcsMain" name="word" placeholder="Search..." autoComplete="on" />
                         <button type="submit">Go</button>
                     </form>
                 </section>
