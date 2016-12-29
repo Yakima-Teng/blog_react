@@ -62,13 +62,7 @@ gulp.task('copy-favicon', () => {
 })
 
 gulp.task('copy-third', () => {
-  return gulp.src(SOURCE + 'third/**/*.js')
-    .pipe(gulp.dest(DEST + 'js'))
-    .pipe(connect.reload())
-})
-
-gulp.task('copy-third', () => {
-  return gulp.src(SOURCE + 'third/**/*.js')
+  return gulp.src(SOURCE + 'third/**/*.min.js')
     .pipe(gulp.dest(DEST + 'js'))
     .pipe(connect.reload())
 })
@@ -86,12 +80,12 @@ gulp.task('less', () => {
     }))
     .on('error', e => console.log(e))
     // ouput app.css
-    .pipe(gulp.dest(DEST + 'css'))
+    // .pipe(gulp.dest(DEST + 'css'))
     .pipe(rename({
       suffix: '.min'
     }))
     .pipe(minifycss({
-      compatibility: 'ie8'
+      // compatibility: 'ie8'
     }))
     // output app.min.css
     .pipe(gulp.dest(DEST + 'css'))
@@ -103,7 +97,7 @@ gulp.task('js', () => {
     .transform('babelify', { presets: ['es2015', 'react'] })
     .bundle()
     .pipe(source('complied.js'))
-    .pipe(gulp.dest(DEST + 'js'))
+    // .pipe(gulp.dest(DEST + 'js'))
     .pipe(rename({
       extname: '.min.js'
     }))
